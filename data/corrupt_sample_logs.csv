@@ -1,0 +1,7 @@
+timestamp,event_type,username,source_ip,result,description
+2026-10-30 08:00:00,LOGIN_ATTEMPT,alice,192.168.1.10,SUCCESS,Valid row
+INVALID-TIMESTAMP-STR,LOGIN_ATTEMPT,bob,192.168.1.11,FAILURE,Corrupt timestamp string
+2026-10-30 08:05:00,LOGIN_ATTEMPT,,192.168.1.12,FAILURE,Missing username field
+2026-10-30 08:10:00,,charlie,192.168.1.13,SUCCESS,Missing event_type
+2026-10-30 08:15:00,LOGIN_ATTEMPT,david,,SUCCESS,Missing source IP
+2026-10-30 08:20:00,LOGIN_ATTEMPT,eva,192.168.1.15,SUCCESS,Another valid row

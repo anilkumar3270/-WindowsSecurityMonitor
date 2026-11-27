@@ -1,0 +1,22 @@
+# Python cache
+__pycache__/
+.pytest_cache/
+*.pyc
+*.pyo
+
+# Virtual environments
+.venv/
+venv/
+
+# Confidential information
+.env
+.env.*
+*.log
+
+# Generated test outputs
+test_outputs/
+output.txt
+test*-output.txt
+
+# Temporary files
+*.tmp

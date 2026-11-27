@@ -1,0 +1,44 @@
+timestamp,event_type,username,source_ip,result,description
+2026-10-30 08:30:00,LOGIN_ATTEMPT,alice,192.168.1.15,SUCCESS,Standard password authentication
+2026-10-30 08:35:00,LOGIN_ATTEMPT,bob_finance,192.168.1.22,SUCCESS,Standard password authentication
+2026-10-30 08:42:00,LOGIN_ATTEMPT,david_ops,192.168.1.45,SUCCESS,Kerberos ticket granted
+2026-10-30 08:45:00,LOGIN_ATTEMPT,eva_hr,192.168.1.60,SUCCESS,Standard password authentication
+2026-10-30 08:55:00,LOGOUT,david_ops,192.168.1.45,SUCCESS,User session terminated gracefully
+2026-10-30 09:03:00,LOGOUT,eva_hr,192.168.1.60,SUCCESS,User session terminated gracefully
+2026-10-30 09:15:00,LOGIN_ATTEMPT,alice,192.168.1.15,FAILURE,Incorrect password entered
+2026-10-30 09:15:45,LOGIN_ATTEMPT,alice,192.168.1.15,FAILURE,Incorrect password entered
+2026-10-30 09:16:30,LOGIN_ATTEMPT,alice,192.168.1.15,FAILURE,Incorrect password entered
+2026-10-30 09:17:15,LOGIN_ATTEMPT,alice,192.168.1.15,FAILURE,Incorrect password entered
+2026-10-30 09:18:00,LOGIN_ATTEMPT,alice,192.168.1.15,FAILURE,Incorrect password entered
+2026-10-30 09:45:00,LOGIN_ATTEMPT,alice,192.168.1.15,SUCCESS,Password authenticated after reset
+2026-10-30 10:00:00,LOGIN_ATTEMPT,bob_finance,192.168.1.22,FAILURE,Incorrect credentials
+2026-10-30 10:00:35,LOGIN_ATTEMPT,bob_finance,192.168.1.22,FAILURE,Incorrect credentials
+2026-10-30 10:01:10,LOGIN_ATTEMPT,bob_finance,192.168.1.22,FAILURE,Incorrect credentials
+2026-10-30 10:01:45,LOGIN_ATTEMPT,bob_finance,192.168.1.22,FAILURE,Incorrect credentials
+2026-10-30 10:02:20,LOGIN_ATTEMPT,bob_finance,192.168.1.22,FAILURE,Incorrect credentials
+2026-10-30 10:03:00,ACCOUNT_LOCKOUT,bob_finance,192.168.1.22,LOCKOUT,Account locked due to consecutive authentication failures
+2026-10-30 10:30:00,LOGIN_ATTEMPT,charlie_dev,192.168.1.105,FAILURE,Authentication failed - bad password
+2026-10-30 10:30:50,LOGIN_ATTEMPT,charlie_dev,192.168.1.105,FAILURE,Authentication failed - bad password
+2026-10-30 10:31:40,LOGIN_ATTEMPT,charlie_dev,192.168.1.105,FAILURE,Authentication failed - bad password
+2026-10-30 10:33:30,LOGIN_ATTEMPT,charlie_dev,192.168.1.105,SUCCESS,Authentication successful via dictionary match
+2026-10-30 10:45:00,LOGOUT,charlie_dev,192.168.1.105,SUCCESS,Session ended
+2026-10-30 11:00:00,LOGIN_ATTEMPT,oracle_svc,192.168.1.200,FAILURE,Unknown user account
+2026-10-30 11:02:00,LOGIN_ATTEMPT,ftpuser,192.168.1.200,FAILURE,Unknown user account
+2026-10-30 11:20:00,LOGIN_ATTEMPT,root,10.0.0.88,FAILURE,Automated brute-force probe for root
+2026-10-30 11:20:04,LOGIN_ATTEMPT,administrator,10.0.0.88,FAILURE,Automated brute-force probe for administrator
+2026-10-30 11:20:08,LOGIN_ATTEMPT,test_admin,10.0.0.88,FAILURE,Automated brute-force probe for test_admin
+2026-10-30 11:20:12,LOGIN_ATTEMPT,guest,10.0.0.88,FAILURE,Automated brute-force probe for guest
+2026-10-30 11:20:16,LOGIN_ATTEMPT,backup_user,10.0.0.88,FAILURE,Automated brute-force probe for backup_user
+2026-10-30 11:20:20,LOGIN_ATTEMPT,sql_admin,10.0.0.88,FAILURE,Automated brute-force probe for sql_admin
+2026-10-30 11:20:24,LOGIN_ATTEMPT,dev_ops,10.0.0.88,FAILURE,Automated brute-force probe for dev_ops
+2026-10-30 11:20:28,LOGIN_ATTEMPT,monitor,10.0.0.88,FAILURE,Automated brute-force probe for monitor
+2026-10-30 11:20:32,LOGIN_ATTEMPT,api_user,10.0.0.88,FAILURE,Automated brute-force probe for api_user
+2026-10-30 11:20:36,LOGIN_ATTEMPT,service_acc,10.0.0.88,FAILURE,Automated brute-force probe for service_acc
+2026-10-30 11:20:40,LOGIN_ATTEMPT,temp_user,10.0.0.88,FAILURE,Automated brute-force probe for temp_user
+2026-10-30 12:00:00,LOGIN_ATTEMPT,alice,192.168.1.15,SUCCESS,Standard authentication success
+2026-10-30 13:10:00,LOGIN_ATTEMPT,david_ops,192.168.1.45,SUCCESS,Standard authentication success
+2026-10-30 14:15:00,LOGIN_ATTEMPT,eva_hr,192.168.1.60,SUCCESS,Standard authentication success
+2026-10-30 15:00:00,LOGIN_ATTEMPT,charlie_dev,192.168.1.105,SUCCESS,Standard authentication success
+2026-10-30 15:45:00,LOGIN_ATTEMPT,david_ops,192.168.1.45,SUCCESS,Standard authentication success
+2026-10-30 16:20:00,LOGIN_ATTEMPT,eva_hr,192.168.1.60,SUCCESS,Standard authentication success
+2026-10-30 17:00:00,LOGIN_ATTEMPT,alice,192.168.1.15,SUCCESS,Standard authentication success
